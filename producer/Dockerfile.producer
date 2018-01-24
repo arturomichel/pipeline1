@@ -1,0 +1,12 @@
+FROM library/python
+
+RUN mkdir /producer
+
+ADD ./producer.py      /producer
+ADD ./requirements.txt /producer
+ADD ./hhgttg.txt       /producer
+
+WORKDIR /producer
+RUN pip install -r requirements.txt
+
+CMD ["python", "producer.py"]
