@@ -14,9 +14,9 @@ The second handler stores the messages as a dictionary in a redis instance.
 
 Requirements
 ------------
-python 3
-docker 1.17.0+
-docker compose 1.17.0+
+- python 3
+- docker 1.17.0+
+- docker compose 1.17.0+
 
 
 Run
